@@ -16,6 +16,11 @@ public class Carro {
         this.valorDoCarro = valorDoCarro;
     }
 
+    public void mostraCarro(){
+        System.out.println("Nome: " + this.nome + " Peso: " + this.peso + " Fabricante: " + this.fabricante + " Cor: " + this.cor + " Valor do Carro: " + this.valorDoCarro);
+
+    }
+
     public void darDesconto(double percentualDeDesconto){
         this.valorDoCarro = valorDoCarro - (valorDoCarro * percentualDeDesconto);
     }
