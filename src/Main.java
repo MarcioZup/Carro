@@ -8,8 +8,15 @@ public class Main {
         Carro chevrolet = new Carro("vectra", 1400,"chevrolet", "azul", 25000);
         chevrolet.mostraCarro();
 
-        chevrolet.darDesconto(0.1);
-        chevrolet.pintar("preto");
+        System.out.println("Digite o valor do desconto: ");
+
+        double desconto = teclado.nextDouble();
+
+        chevrolet.darDesconto(desconto);
+
+        System.out.println("Digite a nova cor: ");
+        String novaCor = teclado.nextLine();
+        chevrolet.pintar(novaCor);
 
         chevrolet.mostraCarro();
 
