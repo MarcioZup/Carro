@@ -16,6 +16,7 @@ public class Main {
 
         System.out.println("Digite a nova cor: ");
         String novaCor = teclado.nextLine();
+        teclado.nextLine();
         chevrolet.pintar(novaCor);
 
         chevrolet.mostraCarro();
